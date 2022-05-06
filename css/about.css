@@ -1,0 +1,110 @@
+li{
+    list-style: none;
+}
+body { font-family: sans-serif; }
+#main-menu .nav-bar { list-style:none; margin-top: 40px; }
+#main-menu .nav-bar li { display:inline; padding:0 10px; }
+#main-menu .nav-bar li a {
+  text-decoration: none;
+  padding-left: 25px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #333;
+    text-shadow: 2px 2px 2px #ccc;
+}
+.nav-bar .nav-button-home a { background:url("https://www.cheesetoast.co.uk/cheesepress/wp-content/uploads/2012/08/home.gif") no-repeat 0px -2px transparent; }
+.nav-bar .nav-button-services a { background:url("https://www.cheesetoast.co.uk/cheesepress/wp-content/uploads/2012/08/services.gif") no-repeat 0px -2px transparent; }
+.nav-bar .nav-button-products a { background:url("https://www.cheesetoast.co.uk/cheesepress/wp-content/uploads/2012/08/products.gif") no-repeat 0px -2px transparent; }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: arial;
+  }
+  * a {
+    text-decoration: none;
+  }
+  .container {
+    min-height: 120vh;
+    padding-bottom: 50px;
+    margin: 0 auto;
+    position: relative;
+  }
+  .bg {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  .bg::after {
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    filter: brightness(30%);
+    background-image: url("/images/B2.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+  }
+  .T1 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .T1 h1 {
+    font-size: 7rem;
+    padding: 25px;
+    color: #fff;
+  }
+  .T2 {
+    color: #fff;
+    padding: 25px;
+  }
+  .T2 p {
+    opacity: 0.8;
+    font-size: 1.5rem;
+  }
+  .T2 h2 {
+    font-size: 3rem;
+    letter-spacing: 5px;
+  }
+  .card {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 20px;
+    float:right;
+  }
+  .card .box1 {
+    width: 450%;
+    height: 450px;
+    background-position: bottom;
+    background-size: cover;
+    position: relative;
+    border-radius: 1000px;
+    cursor: pointer;
+  }
+.box1 {
+  background-image: url("/images/B3.jpg");
+}
+.card div {
+    transition: 0.5s;
+  }
+  .card div:hover {
+    transition: 0.3s;
+    transform: translateY(-10px);
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  }
